@@ -29,6 +29,8 @@ footer.technicalSupport=For technical support: {0}
 footer.technicalSupport.v2=For technical support: Email {0}
 # Placeholder message when an applicant clicked the "Continue as Guest".
 # This should be consistent with button.guestLogin.
+footer.informationServices=Looking for more information services?
+footer.visit=Visit {0}
 guest=Guest
 # Clicking this button shows a dropdown menu to change the display language
 button.languages=Select Language

@@ -95,7 +95,23 @@ public abstract class NorthStarBaseView {
     context.setVariable("userIsAdmin", userIsAdmin);
     context.setVariable("goBackIcon", Icons.ARROW_LEFT);
     context.setVariable("launchIcon", Icons.LAUNCH);
+    // context.setVariable("baseUrlWithoutScheme", getBaseUrlWithoutScheme());
+    // String CommonIntakeMoreResourceLink =
+    //     settingsManifest.getCommonIntakeMoreResourcesLinkHref(request).get();
 
+    // if (CommonIntakeMoreResourceLink != null && !CommonIntakeMoreResourceLink.isEmpty()) {
+    //   context.setVariable(
+    //       "moreResourcesLink",
+    //       "<a id=\"more-resources-link\" class=\"text-white underline font-bold\" href=\""
+    //           + CommonIntakeMoreResourceLink
+    //           + "\">"
+    //           + "Visit "
+    //           + CommonIntakeMoreResourceLink
+    //           + "</a>");
+    // } else {
+    //   context.setVariable("moreResourcesLink", null);
+    // }
+    
     // Language selector params
     Lang preferredLanguage = languageUtils.getPreferredLanguage(request);
     context.setVariable("preferredLanguage", preferredLanguage);
@@ -188,6 +204,9 @@ public abstract class NorthStarBaseView {
       context.setVariable(
           "additionalToolsUrl", controllers.dev.routes.DevToolsController.index().url());
     }
+
+    // Set footer information
+
 
     return context;
   }

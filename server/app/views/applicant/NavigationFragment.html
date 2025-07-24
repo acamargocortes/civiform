@@ -371,12 +371,19 @@
           /></a>
         </div>
         <section class="usa-identifier__identity">
+           <p
+            class="usa-identifier__identity-domain"
+             th:text="#{footer.officialWebsiteOf(${civicEntityFullName})}"
+          ></p>
           <p
             class="usa-identifier__identity-disclaimer"
             th:text="#{footer.officialWebsiteOf(${civicEntityFullName})}"
           ></p>
         </section>
       </div>
+      <div class="usa-identifier__container"
+        th:text="#{footer.informationServices}"
+      ></div>
     </section>
   </div>
   <div
